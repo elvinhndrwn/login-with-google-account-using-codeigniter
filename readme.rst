@@ -1,70 +1,31 @@
 ###################
-What is CodeIgniter
+[DEMO PROGRAM](https://portfolio.elvinhendrawan.site/oauth/google_login/login)
 ###################
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+*******************
+Yang di butuhkan :
+*******************
+1. Codeigniter 3
+2. Composer
+3. Git Bash
+4. Google API Client Library
 
 *******************
-Release Information
+Cara Instalasi :
 *******************
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
+1. Download file zip nya.
+2. Extract ke dalam folder htdocs, lalu import file sql kedalam phpmyadmin dan silahkan atur konfigurasi database nya didalam folder application/database.php
+3. Setelah itu, kunjungi halaman  https://console.developers.google.com/ untuk mendapatkan Google API.
+4. Setelah mengunjungi tautan diatas, silahkan daftar dan membuat projek baru.
+5. Setelah Projek dibuat, selanjutnya klik menu krudensial lalu buat Client ID oAuth melalui tombol "Buat Krudensial"
+6. Isi bagian "URI pengalihan yang diotorisasi" dengan url controller login anda. Jika sudah klik Simpan.
+7. Simpan Client ID dan Secret Key yang telah didapatkan.
+8. Setelah itu Download Google API Client Library for PHP script dengan cara Buka folder projek Anda, lalu silahkan menuju ke folder aplication lalu masuk ke libraries
+9. Didalam folder libraries silahkan klik kanan lalu "Git Bash Here"
+10. Jika jendela git bash sudah muncul, ketikan : composer require google/apiclient:"^2.0"
+11. Tunggu hingga proses download selesai.
 
-**************************
-Changelog and New Features
-**************************
 
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
 
-*******************
-Server Requirements
-*******************
 
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
