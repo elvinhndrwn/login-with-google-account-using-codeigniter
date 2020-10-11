@@ -26,6 +26,7 @@ Cara Instalasi :
 9. Didalam folder libraries silahkan klik kanan lalu "Git Bash Here"
 10. Jika jendela git bash sudah muncul, ketikan : composer require google/apiclient:"^2.0"
 11. Tunggu hingga proses download selesai.
+12. Ubah Client ID, Secret Key, dan  Redirect Uri di file Google_login.php dalam folder Controller sesuai dengan Akun Anda.
 
 
 
